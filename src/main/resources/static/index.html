@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Vehículos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Registro y Gestión de Vehículos</h1>
+</header>
+
+<!-- Formulario para registrar vehículo -->
+<section id="formulario">
+    <h2>Registrar Vehículo</h2>
+    <form id="vehiculo-form">
+        <fieldset>
+            <legend>Detalles del Vehículo</legend>
+
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" required>
+
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" required>
+
+            <label for="anio">Año:</label>
+            <input type="number" id="anio" name="anio" required min="1900" max="2024">
+
+            <label for="placa">Placa:</label>
+            <input type="text" id="placa" name="placa" required>
+
+            <button type="submit">Registrar Vehículo</button>
+        </fieldset>
+    </form>
+</section>
+
+<!-- Sección para mostrar los vehículos registrados -->
+<section id="vehiculos-lista">
+    <h2>Vehículos Registrados</h2>
+    <table id="vehiculos-table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Año</th>
+            <th>Placa</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Aquí se agregarán los vehículos dinámicamente -->
+        </tbody>
+    </table>
+</section>
+
+<!-- Botón para ir al formulario de citas -->
+<section id="navegacion1">
+    <a href="citas.html">
+        <button class="navegar-btn">Ir a Gestión de Citas</button>
+    </a>
+</section>
+<section id="navegacion2">
+    <a href="reparaciones.html">
+        <button class="navegar-btn">Ir a Gestión de Reparaciones</button>
+    </a>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

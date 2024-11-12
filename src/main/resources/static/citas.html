@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Citas</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+<header>
+  <h1>Gestión de Citas para Vehículos</h1>
+</header>
+
+<!-- Formulario para registrar cita -->
+<section id="formulario2">
+  <h2>Registrar Cita</h2>
+  <form id="cita-form">
+    <label for="vehiculo">Vehículo:</label>
+    <input type="text" id="vehiculo" name="vehiculo" required>
+
+    <label for="fechaHora">Fecha y Hora:</label>
+    <input type="datetime-local" id="fechaHora" name="fechaHora" required>
+
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion" required></textarea>
+
+    <button type="submit">Registrar Cita</button>
+  </form>
+</section>
+
+<!-- Sección para mostrar las citas registradas -->
+<section id="citas-lista">
+  <h2>Citas Registradas</h2>
+  <table id="citas-table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Vehículo</th>
+      <th>Fecha y Hora</th>
+      <th>Descripción</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Aquí se agregarán las citas dinámicamente -->
+    </tbody>
+  </table>
+</section>
+
+<section id="navegacion1">
+  <a href="index.html">
+    <button class="navegar-btn">Ir a Gestión de Vehiculos</button>
+  </a>
+</section>
+<section id="navegacion2">
+  <a href="reparaciones.html">
+    <button class="navegar-btn">Ir a Gestión de Reparaciones</button>
+  </a>
+</section>
+
+<script src="app2.js"></script>
+</body>
+</html>
